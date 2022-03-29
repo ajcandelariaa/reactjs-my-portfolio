@@ -1,0 +1,22 @@
+.introduction_container {
+  background: #fff;
+}
+.introduction_wrapper {
+  width: 80%;
+  margin: 0px auto;
+  padding: 30px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.my_image {
+  width: 70%;
+}
+
+p {
+  color: rebeccapurple;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
