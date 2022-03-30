@@ -1,3 +1,21 @@
 .info{
-    padding-left: 50px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+.info p{
+    width: 100%;
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.info img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }

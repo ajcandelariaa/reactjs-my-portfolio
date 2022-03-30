@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./AboutInfo.module.css";
+import aj from "../../../../images/aj.jpg";
 
 function AboutInfo() {
   return (
@@ -13,6 +14,7 @@ function AboutInfo() {
         also convert your website into native android mobile application by the
         use of Kotlin programming language.
       </p>
+      <img src={aj} alt="aj" />
     </div>
   );
 }

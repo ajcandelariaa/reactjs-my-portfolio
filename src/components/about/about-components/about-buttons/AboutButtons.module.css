@@ -1,17 +1,27 @@
 .buttons{
-    padding: 50px 0px;
-    border-right: 1px solid white;
+    margin-top: 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
 }
-.buttons button{
-    outline: none;
-    border: none;
+.buttons .btn{
     background-color: #2C2C2C;
     color: #fff;
+    outline: none;
+    border: none;
     cursor: pointer;
-    width: 80%;
+    width: 100%;
+    padding: 20px 0px;
+}
+.buttons .btn:hover{
+    background-color: #4d4d4d;
+    color: #fff;
+}
+.buttons .btn_active{
+    background-color: #fff;
+    color: #000000;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
     padding: 20px 0px;
 }
