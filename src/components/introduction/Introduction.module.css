@@ -1,22 +1,39 @@
-.introduction_container {
-  background: #fff;
-}
-.introduction_wrapper {
+.container {
   width: 80%;
   margin: 0px auto;
-  padding: 30px 0px;
+  height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 20px;
+}
+.image_container{
+  text-align: center;
 }
 .my_image {
-  width: 70%;
+  width: 90%;
 }
-
-p {
-  color: rebeccapurple;
+.info {
+  padding-left: 50px;
 }
-
-h1 {
+.info p {
+  font-size: 1.2rem;
+}
+.info h1 {
   font-size: 5.5rem;
+  padding: 5px 0px;
+}
+.info button {
+  margin-top: 30px;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.info button:hover {
+  background-color: black;
+  color: white;
+  transition: background .5s, color .5s;
 }

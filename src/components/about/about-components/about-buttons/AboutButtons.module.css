@@ -1,0 +1,17 @@
+.buttons{
+    padding: 50px 0px;
+    border-right: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons button{
+    outline: none;
+    border: none;
+    background-color: #2C2C2C;
+    color: #fff;
+    cursor: pointer;
+    width: 80%;
+    padding: 20px 0px;
+}

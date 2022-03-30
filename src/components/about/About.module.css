@@ -1,0 +1,19 @@
+.container{
+    background: #000;
+    height: 50vh;
+}
+.wrapper{
+    width: 80%;
+    margin: 0px auto;
+    color: white;
+    padding: 30px 0px;
+}
+.heading{
+    font-size: 2rem;
+    text-align: center;
+}
+.about_grid{
+    display: grid;
+    grid-template-columns: 250px auto;
+    align-items: center;
+}

@@ -12,8 +12,8 @@ function Home() {
     <div>
       <Navbar />
       <Introduction />
-      {/* <About />
-      <Projects />
+      <About />
+      {/*<Projects />
       <Achievements />
       <Contact />
       <Footer /> */}

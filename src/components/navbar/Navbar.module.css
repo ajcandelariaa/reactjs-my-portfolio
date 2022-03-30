@@ -1,31 +1,30 @@
-.nav_container{
-    background-color: rgb(58, 58, 58);
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-.nav_wrapper{
+.container{
     width: 80%;
     margin: 0px auto;
-    padding: 20px 0px;
+    padding: 30px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-
 .image_logo{
     height: 30px;
+    cursor: pointer;
 }
 .links{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+    justify-content: space-between;
     text-align: center;
-    column-gap: 5px;
+    align-items: center;
+    gap: 10px;
 }
 .links a{
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
 .links a:hover{
     text-decoration: underline;
+}
+.links img{
+    height: 35px;
 }
