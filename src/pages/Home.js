@@ -13,10 +13,10 @@ function Home() {
       <Navbar />
       <Introduction />
       <About />
-      {/*<Projects />
+      <Projects />
       <Achievements />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

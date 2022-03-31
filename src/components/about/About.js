@@ -12,18 +12,20 @@ function About() {
   return (
     <div className={`${style.container} about`}>
       <div className={style.wrapper}>
-        <p className={style.heading}>About</p>
+        <p className={style.heading}>{active}</p>
         <AboutButtons active={active} setActive={setActive} />
         <div className={style.info_container}>
-          {active === "About" ? (
-            <AboutInfo />
-          ) : active === "Skills" ? (
-            <AboutSkills />
-          ) : active === "Education" ? (
-            <AboutEducation />
-          ) : (
-            <AboutHobbies />
-          )}
+          <div className={style.info_wrapper}>
+            {active === "About" ? (
+              <AboutInfo />
+            ) : active === "Skills" ? (
+              <AboutSkills />
+            ) : active === "Education" ? (
+              <AboutEducation />
+            ) : (
+              <AboutHobbies />
+            )}
+          </div>
         </div>
       </div>
     </div>

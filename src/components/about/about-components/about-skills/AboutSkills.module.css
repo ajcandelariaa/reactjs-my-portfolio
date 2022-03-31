@@ -1,0 +1,17 @@
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #000;
+    justify-content: space-around;
+    font-size: 20px;
+    row-gap: 30px;
+}
+.logos{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.logo{
+    height: 50px;
+}
