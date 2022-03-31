@@ -1,0 +1,32 @@
+.info{
+    background-color: black;
+    color: #959595;
+    text-align: center;
+    padding: 60px 0px;
+}
+.social_media_icons{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.social_media_icons a>img{
+    width: 35px;
+    height: 35px;
+}
+.links{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.links a{
+    font-size: 14px;
+    cursor: pointer;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.info p{
+    margin-top: 20px;
+    font-size: 12px;
+}

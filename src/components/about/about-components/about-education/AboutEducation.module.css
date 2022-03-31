@@ -1,0 +1,35 @@
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+.info p{
+    width: 100%;
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.info img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.school_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.level p{
+    font-size: 30px;
+}
+.level__info{
+    margin-left: 40px;
+}
+.level__info p{
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
