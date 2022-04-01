@@ -1,0 +1,10 @@
+.container {
+  width: 80%;
+  margin: 0px auto;
+  color: black;
+  padding: 70px 0px;
+}
+.heading {
+  font-size: 2rem;
+  text-align: center;
+}

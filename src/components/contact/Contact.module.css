@@ -1,0 +1,26 @@
+.container {
+  width: 80%;
+  margin: 0px auto;
+  color: black;
+  padding: 70px 0px;
+}
+.heading {
+  font-size: 2rem;
+  text-align: center;
+}
+.form_inputs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    row-gap: 10px;
+    margin-top: 30px;
+}
+.input{
+    outline: none;
+    background-color: #dbdbdb;
+    color: #474747;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+}
