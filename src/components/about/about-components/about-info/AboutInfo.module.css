@@ -1,17 +1,18 @@
 .info{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
-    gap: 50px;
+    column-gap: 50px;
 }
 .info p{
     width: 100%;
-    color: #000;
+    color: #fff;
     font-size: 1.2rem;
     line-height: 30px;
+    text-align: justify;
 }
 .info img{
-    width: 400px;
+    width: 450px;
     height: 400px;
     object-fit: cover;
 }

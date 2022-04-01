@@ -4,17 +4,14 @@ import style from "./AboutHobbies.module.css";
 function AboutHobbies() {
   return (
     <div className={style.hobbies__grid}>
-      <p>Basketball</p>
-      <p>Watching Movies</p>
+      <p><i className="fa-solid fa-basketball"></i>Basketball</p>
+      <p><i className="fa-solid fa-clapperboard"></i>Watching Movies & Anime</p>
       
-      <p>Fishing</p>
-      <p>Watching Anime</p>
+      <p><i className="fa-solid fa-fish"></i>Fishing</p>
+      <p><i className="fa-solid fa-guitar"></i>Playing Guitar</p>
       
-      <p>Camping</p>
-      <p>Playing Guitar</p>
-      
-      <p>Jamming</p>
-      <p>Playing Online Games</p>
+      <p><i className="fa-solid fa-tent"></i>Camping</p>
+      <p><i className="fa-solid fa-basketball"></i>Playing Online Games</p>
     </div>
   )
 }

@@ -6,7 +6,6 @@
 }
 .info p{
     width: 100%;
-    color: #000;
     font-size: 1.2rem;
     line-height: 30px;
 }
@@ -22,14 +21,16 @@
     gap: 30px;
 }
 .level p{
-    font-size: 30px;
+    font-size: 1.5rem;
+    color: #fff;
 }
 .level__info{
     margin-left: 40px;
 }
 .level__info p{
     line-height: 20px;
-    font-size: 14px;
+    font-size: 0.9rem;
     margin: 0px;
     padding: 0px;
+    color: rgb(172, 172, 172);
 }

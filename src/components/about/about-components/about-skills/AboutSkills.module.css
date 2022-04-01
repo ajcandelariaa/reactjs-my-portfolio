@@ -1,16 +1,16 @@
 .info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: #000;
+    color: #fff;
     justify-content: space-around;
     font-size: 20px;
-    row-gap: 30px;
+    row-gap: 50px;
 }
 .logos{
     margin-left: 20px;
     margin-top: 10px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 .logo{
     height: 50px;

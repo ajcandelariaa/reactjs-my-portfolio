@@ -11,12 +11,16 @@
     font-size: 2rem;
     text-align: center;
 }
-.info_container{
-    background-color: white;
+.infos_container{
+    margin-top: 50px;
     height: 500px;
+    display: grid;
+    grid-template-columns: 200px 1px auto;
+    column-gap: 50px;
 }
-.info_wrapper{
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px 0px;
+.border{
+    background-color: aliceblue;
+}
+.info{
+    align-self: center;
 }

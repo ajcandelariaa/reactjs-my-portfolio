@@ -13,9 +13,10 @@ function About() {
     <div className={`${style.container} about`}>
       <div className={style.wrapper}>
         <p className={style.heading}>{active}</p>
-        <AboutButtons active={active} setActive={setActive} />
-        <div className={style.info_container}>
-          <div className={style.info_wrapper}>
+        <div className={style.infos_container}>
+          <AboutButtons active={active} setActive={setActive} />
+          <div className={style.border}></div>
+          <div className={style.info}>
             {active === "About" ? (
               <AboutInfo />
             ) : active === "Skills" ? (

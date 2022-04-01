@@ -1,12 +1,12 @@
 .hobbies__grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-    width: 750px;
-    margin: 0px auto;
-    padding-top: 80px;
+    width: 80%;
 }
 .hobbies__grid p{
-    color: #000;
-    font-size: 30px;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.hobbies__grid p>i{
+    margin-right: 20px;
 }
