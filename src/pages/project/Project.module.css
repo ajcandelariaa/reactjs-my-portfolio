@@ -1,0 +1,17 @@
+.project_introduction{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.project_title{
+    font-size: 50px;
+    color: #fff;
+}
+.project_desc{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #9F9F9F;
+    width: 500px;
+}

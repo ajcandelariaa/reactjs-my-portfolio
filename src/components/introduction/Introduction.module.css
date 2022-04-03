@@ -31,9 +31,9 @@
   padding: 10px 25px;
   cursor: pointer;
   border: 1px solid black;
+  transition: background .5s, color .5s;
 }
 .info button:hover {
   background-color: black;
   color: white;
-  transition: background .5s, color .5s;
 }

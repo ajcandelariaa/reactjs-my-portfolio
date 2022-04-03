@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./AboutInfo.module.css";
-import aj from "../../../../images/aj.jpg";
+import aj from "../../../../images/about/aj.jpg";
 
 function AboutInfo() {
   return (

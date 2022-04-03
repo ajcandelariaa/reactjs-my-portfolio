@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'react-scroll/modules/components/Link'
 import style from "./Navbar.module.css";
-import logo from "../../images/logo.jpg";
+import logo from "../../images/navbar/logo.jpg";
 
 function Navbar() {
   return (

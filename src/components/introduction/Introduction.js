@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../../images/aj2.png";
+import myImage from "../../images/introduction/aj2.png";
 import style from "./Introduction.module.css";
 
 function Introduction() {
@@ -12,7 +12,7 @@ function Introduction() {
         <p>Hello, I am</p>
         <h1>Aj</h1>
         <h1>Candelaria</h1>
-        <p>A Junior Mobile Developer and Full-Stack Web Developer</p>
+        <p>A Junior Full-Stack Web and Mobile Developer</p>
 
         <button>Download my Resume</button>
       </div>

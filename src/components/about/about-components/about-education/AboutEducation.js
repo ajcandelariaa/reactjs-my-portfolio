@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./AboutEducation.module.css";
-import education from "../../../../images/education.PNG";
+import education from "../../../../images/about/education.PNG";
 
 function AboutEducation() {
   return (
