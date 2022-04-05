@@ -17,7 +17,7 @@
     transform: translate(-50%, -50%);
     z-index: 20;
 }
-.modal_info img{
+.modal_info .modal_info_image{
     width: 100%;
     height: 100%;
     object-fit: contain;

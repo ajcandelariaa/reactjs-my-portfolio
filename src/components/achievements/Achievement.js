@@ -1,13 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Achievement.module.css";
 import { AnimatePresence } from "framer-motion";
 import ImageModal from "../../helpers/ImageModal";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Achievement({ achievement }) {
   const [imageModal, setImageModal] = useState(false);
+  const { ref, inView } = useInView();
+  const controls = useAnimation();
 
+  const animate = {
+    visible: { opacity: 1, y: 0, transition: { duration: .5, delay: achievement.delay} },
+    hidden: { opacity: 0, y: 50 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <div>
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={animate}
+    >
       <div className={style.achievement_grid}>
         <img src={achievement.badge} alt={achievement.badge} />
         <div className={style.achievement_info}>
@@ -35,7 +54,7 @@ function Achievement({ achievement }) {
           />
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }
 

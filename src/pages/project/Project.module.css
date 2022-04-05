@@ -69,4 +69,9 @@
   height: 300px;
   object-fit: cover;
   cursor: pointer;
+  transform-style: scale(1);
+}
+
+.project_images img:hover {
+  transform-style: scale(1.2);
 }

@@ -17,10 +17,30 @@
     margin-top: 30px;
 }
 .input{
-    outline: none;
     background-color: #dbdbdb;
     color: #474747;
     padding: 15px 10px;
-    border: none;
+    border: 1px solid #c2c1c1;
     border-radius: 5px;
+}
+.input:focus{
+  outline-style: solid;
+  outline-color: #686868;
+}
+
+.form_button{
+  text-align: center;
+  margin-top: 20px;
+}
+.form_button button{
+  font-size: 15px;
+  color: white;
+  background: rgb(46, 46, 46);
+  padding: 10px 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .3s;
+}
+.form_button button:hover{
+  background: black;
 }

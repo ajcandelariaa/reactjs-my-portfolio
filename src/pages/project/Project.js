@@ -8,11 +8,17 @@ import Link from "react-scroll/modules/components/Link";
 import scrolldown from "../../images/projects/scrolldown.gif";
 import ProjectImage from "../../components/projects/ProjectImage";
 
+import { motion } from "framer-motion";
+
 function Project() {
   const [project, setProject] = useState([]);
   const [title, setTitle] = useState("Project");
   const { projectName } = useParams();
   const navigate = useNavigate();
+  const fade = {
+    hidden: { opacity: 0, y: 1100},
+    visible: { opacity: 1, y: 0},
+  };
 
   useEffect(() => {
     const data = getProjects().filter(
@@ -41,9 +47,9 @@ function Project() {
       >
         <div className={style.project_introduction}>
           <div>
-            <p className={style.project_title}>{project.title}</p>
-            <p className={style.project_desc}>{project.description}</p>
-            <div className={style.links_flex}>
+            <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .1 }} className={style.project_title}>{project.title}</motion.p>
+            <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .2 }} className={style.project_desc}>{project.description}</motion.p>
+            <motion.div variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .3 }}  className={style.links_flex}>
               {project.website === "" ? (
                 ""
               ) : (
@@ -54,8 +60,8 @@ function Project() {
               <a href={project.repository} target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-github"></i>
               </a>
-            </div>
-            <div className={style.project_scroll_down}>
+            </motion.div>
+            <motion.div variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .4 }} className={style.project_scroll_down}>
               <Link
                 to="bottom"
                 spy={true}
@@ -65,7 +71,7 @@ function Project() {
               >
                 <img src={scrolldown} alt="scrolldown" />
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
