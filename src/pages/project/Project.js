@@ -47,11 +47,11 @@ function Project() {
               {project.website === "" ? (
                 ""
               ) : (
-                <a href={project.website} target="_blank">
+                <a href={project.website} target="_blank" rel="noreferrer">
                   Live Demo
                 </a>
               )}
-              <a href={project.repository} target="_blank">
+              <a href={project.repository} target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-github"></i>
               </a>
             </div>

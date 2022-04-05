@@ -11,7 +11,7 @@ function Projects() {
         <div className={style.projects_grid}>
           {getProjects().map((project) => (
             <div className={style.project_container} key={project.id}>
-              <NavLink to={project.link} target="_blank">
+              <NavLink to={project.link} target="_blank" rel="noreferrer">
                 <img src={project.image} alt="aj" />
               </NavLink>
               {/* <p className={style.project_name}>{project.name}</p> */}

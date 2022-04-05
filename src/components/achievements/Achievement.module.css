@@ -1,0 +1,52 @@
+.achievement_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.achievement_grid img{
+    width: 100%;
+}
+.achievement_info .achievement_title{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.achievement_info .achievement_sub{
+    font-size: 12px;
+    color: #A0A0A0;
+}
+.achievement_info .achievement_buttons{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+.achievement_info .achievement_buttons button{
+    font-size: 12px;
+    color: white;
+    background: black;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .5s, color .5s;
+}
+.achievement_info .achievement_buttons button:hover{
+    background: white;
+    color: black;
+}
+.achievement_info .achievement_buttons a{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    background: black;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background .5s, color .5s;
+}
+.achievement_info .achievement_buttons a:hover{
+    background: white;
+    color: black;
+}
