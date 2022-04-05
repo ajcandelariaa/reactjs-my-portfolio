@@ -23,55 +23,67 @@ import androidKotlin from "../../../../images/skills/androidKotlin.png";
 import swift from "../../../../images/skills/swift.png";
 import cplusplus from "../../../../images/skills/cplusplus.png";
 
+import { motion } from "framer-motion";
+
 
 function AboutSkills() {
+  const fade = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0 },
+  };
+  
+  const fade2 = {
+    hidden: { opacity: 0},
+    visible: { opacity: 1},
+  };
+
   return (
     <div className={style.info}>
       <div>
-        <p>Web Development: </p>
+        <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .5, delay: .1  }}>Web Development: </motion.p>
         <div className={style.logos}>
-          <img src={html5} className={style.logo} alt="logo" />
-          <img src={css} className={style.logo} alt="logo" />
-          <img src={javascript} className={style.logo} alt="logo" />
-          <img src={php} className={style.logo} alt="logo" />
-          <img src={sass} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: .2 }} src={html5} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: .3 }} src={css} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: .4 }} src={javascript} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: .5 }} src={php} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: .6 }} src={sass} className={style.logo} alt="logo" />
         </div>
       </div>
 
       <div>
-        <p>Database: </p>
+        <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .5, delay: .7  }}>Database: </motion.p>
         <div className={style.logos}>
-          <img src={mysql} className={style.logo} alt="logo" />
-          <img src={firebase} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: .8 }} src={mysql} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: .9 }} src={firebase} className={style.logo} alt="logo" />
         </div>
       </div>
 
       <div>
-        <p>Frameworks: </p>
+        <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1  }}>Frameworks: </motion.p>
         <div className={style.logos}>
-          <img src={reactjs} className={style.logo} alt="logo" />
-          <img src={laravel} className={style.logo} alt="logo" />
-          <img src={codeigniter} className={style.logo} alt="logo" />
-          <img src={bootstrap} className={style.logo} alt="logo" />
-          <img src={tailwindcss} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.1 }} src={reactjs} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.2 }} src={laravel} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.3 }} src={codeigniter} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.4 }} src={bootstrap} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.5 }} src={tailwindcss} className={style.logo} alt="logo" />
         </div>
       </div>
 
       <div>
-        <p>Tools: </p>
+        <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.6  }}>Tools: </motion.p>
         <div className={style.logos}>
-          <img src={figma} className={style.logo} alt="logo" />
-          <img src={postman} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.7 }} src={figma} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.8 }} src={postman} className={style.logo} alt="logo" />
         </div>
       </div>
 
       <div>
-        <p>Others: </p>
+        <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .5, delay: 1.9  }}>Others: </motion.p>
         <div className={style.logos}>
-          <img src={java} className={style.logo} alt="logo" />
-          <img src={androidKotlin} className={style.logo} alt="logo" />
-          <img src={swift} className={style.logo} alt="logo" />
-          <img src={cplusplus} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 2 }} src={java} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 2.1 }} src={androidKotlin} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 2.2 }} src={swift} className={style.logo} alt="logo" />
+          <motion.img variants={fade2} initial='hidden' animate='visible' transition={{ duration: .5, delay: 2.3 }} src={cplusplus} className={style.logo} alt="logo" />
         </div>
       </div>
     </div>

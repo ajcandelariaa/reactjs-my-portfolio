@@ -1,7 +1,8 @@
 .container {
   width: 80%;
   margin: 0px auto;
-  height: 90vh;
+  padding-top: 60px;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;

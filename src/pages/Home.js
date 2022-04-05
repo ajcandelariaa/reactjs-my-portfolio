@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import About from "../components/about/About";
 import Footer from "../components/footer/Footer";
 import Introduction from "../components/introduction/Introduction";
@@ -8,9 +9,28 @@ import Achievements from "../components/achievements/Achievements";
 import Contact from "../components/contact/Contact";
 
 function Home() {
+  const [navbar, setNavbar] = useState(false)
+  
+  const changeBackground = () => {
+    if (window.scrollY >= 66) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+  
+  useEffect(() => {
+    changeBackground()
+    window.addEventListener("scroll", changeBackground)
+  })
+
   return (
     <div>
-      <Navbar />
+      <Helmet>
+        <title>Aj Candelaria</title>
+      </Helmet>
+      
+      <Navbar navbar={navbar}/>
       <Introduction />
       <About />
       <Projects />

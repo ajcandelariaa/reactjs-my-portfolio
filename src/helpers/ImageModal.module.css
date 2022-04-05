@@ -1,0 +1,25 @@
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    z-index: 10;
+    padding-top: 24;
+    background: rgba(0,0,0,0.9);
+    cursor: pointer;
+}
+.modal_info{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+.modal_info img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: auto;
+}

@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import style from "./Project.module.css";
 import { getProjects } from "../../helpers/Data";
 import { useNavigate, useParams } from "react-router-dom";
 import Link from "react-scroll/modules/components/Link";
 
+import scrolldown from "../../images/projects/scrolldown.gif";
+import ProjectImage from "../../components/projects/ProjectImage";
+
 function Project() {
   const [project, setProject] = useState([]);
+  const [title, setTitle] = useState("Project");
   const { projectName } = useParams();
   const navigate = useNavigate();
 
@@ -14,17 +19,20 @@ function Project() {
       (project) => project.linkName === projectName
     );
 
-    if(data.length === 0) {
+    if (data.length === 0) {
       navigate(`/projects-${projectName}`, { replace: true });
     }
-
+    setTitle(`Project | ${data[0].title}`);
     setProject(...data);
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(${project.image})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(${project.image})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -35,8 +43,29 @@ function Project() {
           <div>
             <p className={style.project_title}>{project.title}</p>
             <p className={style.project_desc}>{project.description}</p>
-            <div className={style.links_grid}>Github</div>
-            <Link to="bottom" spy={true} smooth={true} offset={0} duration={700} className={style.project_scroll_down}>Scroll Down</Link>
+            <div className={style.links_flex}>
+              {project.website === "" ? (
+                ""
+              ) : (
+                <a href={project.website} target="_blank">
+                  Live Demo
+                </a>
+              )}
+              <a href={project.repository} target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div className={style.project_scroll_down}>
+              <Link
+                to="bottom"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={700}
+              >
+                <img src={scrolldown} alt="scrolldown" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -53,7 +82,7 @@ function Project() {
             {project.screenshots && (
               <>
                 {project.screenshots.map((screenshot, index) => (
-                  <img src={screenshot} alt={screenshot} key={index} />
+                  <ProjectImage screenshot={screenshot} key={index} />
                 ))}
               </>
             )}

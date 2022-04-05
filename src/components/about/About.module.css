@@ -21,6 +21,9 @@
 .border{
     background-color: aliceblue;
 }
+.buttons_wrapper{
+    align-self: center;
+}
 .info{
     align-self: center;
 }

@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Helmet } from "react-helmet";
 
 function ErrorPage() {
   return (
-    <div>ErrorPage</div>
-  )
+    <div>
+      <Helmet>
+        <title>Error</title>
+      </Helmet>
+      ErrorPage
+    </div>
+  );
 }
 
-export default ErrorPage
+export default ErrorPage;
