@@ -2,6 +2,7 @@ import React from "react";
 import myImage from "../../images/introduction/aj2.png";
 import style from "./Introduction.module.css";
 import { motion } from "framer-motion";
+import resume from "../../helpers/Candelaria-Resume.pdf"
 
 function Introduction() {
   const fadeLeft = {
@@ -23,7 +24,7 @@ function Introduction() {
         <h1>Candelaria</h1>
         <p>A Junior Full-Stack Web and Mobile Developer</p>
 
-        <button>Download my Resume</button>
+        <a href={resume} download>Download my Resume</a>
       </motion.div>
     </div>
   );

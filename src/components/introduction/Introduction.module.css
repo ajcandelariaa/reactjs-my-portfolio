@@ -24,7 +24,7 @@
   font-size: 5.5rem;
   padding: 5px 0px;
 }
-.info button {
+.info a {
   margin-top: 30px;
   background-color: white;
   outline: none;
@@ -33,8 +33,11 @@
   cursor: pointer;
   border: 1px solid black;
   transition: background .5s, color .5s;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
 }
-.info button:hover {
+.info a:hover {
   background-color: black;
   color: white;
 }

@@ -1,6 +1,6 @@
 import { AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import ImageModal from "../../helpers/ImageModal";
+import ImageModal from "../../helpers/imageModal/ImageModal";
 import style from "./ProjectImage.module.css";
 
 function ProjectImage({ screenshot }) {
