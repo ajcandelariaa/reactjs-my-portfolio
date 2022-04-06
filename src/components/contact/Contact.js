@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import style from "./Contact.module.css";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import emailjs from 'emailjs-com';
 
 function Contact() {
+  const form = useRef();
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
   const [ref3, inView3] = useInView();
@@ -58,6 +60,18 @@ function Contact() {
     }
   }, [controls6, inView6]);
 
+  const handleForm = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_dhbbmif', 'template_v6zpu9h', form.current, 'FMt_aKPxYCGQvy8GB')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
+
   return (
     <div className="contact">
       <div className={style.container}>
@@ -71,7 +85,7 @@ function Contact() {
         >
           Contact Me
         </motion.p>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form ref={form} onSubmit={handleForm}>
           <div className={style.form_inputs}>
             <motion.input
               ref={ref2}
@@ -82,6 +96,7 @@ function Contact() {
               type="text"
               className={style.input}
               placeholder="Name"
+              name="name"
             />
             <motion.input
               ref={ref3}
@@ -92,6 +107,7 @@ function Contact() {
               type="text"
               className={style.input}
               placeholder="Email Address"
+              name="email"
             />
             <motion.input
               ref={ref4}
@@ -102,6 +118,7 @@ function Contact() {
               type="text"
               className={style.input}
               placeholder="Subject"
+              name="subject"
             />
             <motion.textarea
               ref={ref5}
@@ -112,6 +129,7 @@ function Contact() {
               className={style.input}
               placeholder="Your Message"
               rows="8"
+              name="message"
             ></motion.textarea>
           </div>
           <motion.div
