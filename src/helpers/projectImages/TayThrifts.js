@@ -1,3 +1,4 @@
+import taythrifts_0 from "../../images/projects/taythrifts/0.PNG";
 import taythrifts_1 from "../../images/projects/taythrifts/1.PNG";
 import taythrifts_2 from "../../images/projects/taythrifts/2.PNG";
 import taythrifts_3 from "../../images/projects/taythrifts/3.PNG";
@@ -21,6 +22,7 @@ import taythrifts_20 from "../../images/projects/taythrifts/20.PNG";
 
 export default function taythriftsImages() {
   return [
+    taythrifts_0,
     taythrifts_1,
     taythrifts_2,
     taythrifts_3,

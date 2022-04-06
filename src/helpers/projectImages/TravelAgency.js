@@ -1,3 +1,4 @@
+import travelAgency_0 from "../../images/projects/travelAgency/0.PNG";
 import travelAgency_1 from "../../images/projects/travelAgency/1.PNG";
 import travelAgency_2 from "../../images/projects/travelAgency/2.PNG";
 import travelAgency_3 from "../../images/projects/travelAgency/3.PNG";
@@ -15,6 +16,7 @@ import travelAgency_14 from "../../images/projects/travelAgency/14.PNG";
 
 export default function travelAgencyImages() {
   return [
+    travelAgency_0,
     travelAgency_1,
     travelAgency_2,
     travelAgency_3,

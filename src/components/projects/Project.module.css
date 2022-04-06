@@ -5,7 +5,7 @@
   transition: margin .3s;
 }
 .project_container:hover{
-    margin-top: -15px;
+  margin-top: -15px;
 }
 .project_container img{
   width: 100%;

@@ -10,6 +10,27 @@ import recipeIdeasImages from "../helpers/projectImages/RecipeIdeas";
 import travelAgency_main from "../images/projects/travelAgency/0.PNG";
 import travelAgencyImages from "../helpers/projectImages/TravelAgency";
 
+import payrollSystem_main from "../images/projects/payrollSystem/0.PNG";
+import payrollSystemImages from "../helpers/projectImages/PayrollSystem";
+
+import gradingSystem_main from "../images/projects/gradingSystem/0.PNG";
+import gradingSystemImages from "../helpers/projectImages/GradingSystem";
+
+import bankingSystem_main from "../images/projects/bankingSystem/0.PNG";
+import bankingSystemImages from "../helpers/projectImages/BankingSystem";
+
+import lrt2TicketingSystem_main from "../images/projects/lrt2TicketingSystem/0.PNG";
+import lrt2TicketingSystemImages from "../helpers/projectImages/Lrt2TicketingSystem";
+
+import foodRecipes_main from "../images/projects/foodRecipes/0.PNG";
+import foodRecipesImages from "../helpers/projectImages/FoodRecipes";
+
+import quickchen_main from "../images/projects/quickchen/0.PNG";
+import quickchenImages from "../helpers/projectImages/Quickchen";
+
+import humanAnatomy_main from "../images/projects/humanAnatomy/0.PNG";
+import humanAnatomyImages from "../helpers/projectImages/HumanAnatomy";
+
 import certJavascript from "../images/achievements/certJavascript.PNG";
 import certDatabase from "../images/achievements/certDatabase.PNG";
 import certCcna from "../images/achievements/certCcna.PNG";
@@ -94,6 +115,125 @@ export function getProjects() {
         "Add, Edit and Delete Food Recipe",
       ],
       screenshots: travelAgencyImages(),
+    },
+    {
+      id: 5,
+      title: "Payroll System",
+      image: payrollSystem_main,
+      languages: ["C++"],
+      link: "/projects/payroll-system",
+      linkName: "payroll-system",
+      repository: "https://github.com/ajcandelariaa/cplusplus-payroll-system",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: payrollSystemImages(),
+    },
+    {
+      id: 6,
+      title: "Grading System",
+      image: gradingSystem_main,
+      languages: ["C++"],
+      link: "/projects/grading-system",
+      linkName: "grading-system",
+      repository: "https://github.com/ajcandelariaa/cplusplus-grading-system",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: gradingSystemImages(),
+    },
+    {
+      id: 7,
+      title: "Banking System",
+      image: bankingSystem_main,
+      languages: ["C++"],
+      link: "/projects/banking-system",
+      linkName: "banking-system",
+      repository: "https://github.com/ajcandelariaa/cplusplus-mini-banking-system",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: bankingSystemImages(),
+    },
+    {
+      id: 8,
+      title: "LRT 2 Ticketing System",
+      image: lrt2TicketingSystem_main,
+      languages: ["C++"],
+      link: "/projects/lrt2-ticketing-system",
+      linkName: "lrt2-ticketing-system",
+      repository: "https://github.com/ajcandelariaa/cplusplus-train-ticketing-system",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: lrt2TicketingSystemImages(),
+    },
+    {
+      id: 9,
+      title: "Food Recipes",
+      image: foodRecipes_main,
+      languages: ["C++"],
+      link: "/projects/food-recipes",
+      linkName: "food-recipes",
+      repository: "https://github.com/ajcandelariaa/android-food-recipes",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: foodRecipesImages(),
+    },
+    {
+      id: 10,
+      title: "Quickchen",
+      image: quickchen_main,
+      languages: ["C++"],
+      link: "/projects/quickchen",
+      linkName: "quickchen",
+      repository: "https://github.com/ajcandelariaa/xcode-quickchen",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: quickchenImages(),
+    },
+    {
+      id: 11,
+      title: "Human Anatomy",
+      image: humanAnatomy_main,
+      languages: ["C++"],
+      link: "/projects/human-anatomy",
+      linkName: "human-anatomy",
+      repository: "https://github.com/ajcandelariaa/xcode-human-anatomy",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: humanAnatomyImages(),
     },
   ];
   return data;
