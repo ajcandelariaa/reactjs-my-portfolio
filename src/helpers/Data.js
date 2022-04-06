@@ -1,6 +1,14 @@
-import aj from "../images/projects/aj.jpg";
+import taythrifts_main from "../images/projects/taythrifts/0.PNG";
+import taythriftsImages from "../helpers/projectImages/TayThrifts";
 
-import taythrifts from "../images/projects/taythrifts/1.PNG";
+import desktopop_main from "../images/projects/desktopop/0.PNG";
+import desktopopImages from "../helpers/projectImages/Desktopop";
+
+import recipeIdeas_main from "../images/projects/recipeIdeas/0.PNG";
+import recipeIdeasImages from "../helpers/projectImages/RecipeIdeas";
+
+import travelAgency_main from "../images/projects/travelAgency/0.PNG";
+import travelAgencyImages from "../helpers/projectImages/TravelAgency";
 
 import certJavascript from "../images/achievements/certJavascript.PNG";
 import certDatabase from "../images/achievements/certDatabase.PNG";
@@ -18,15 +26,74 @@ export function getProjects() {
     {
       id: 1,
       title: "TayThrifts",
-      image: taythrifts,
+      image: taythrifts_main,
       languages: ["ReactJS", "Firebase", "TailwindCss"],
       link: "/projects/taythrifts",
       linkName: "taythrifts",
       repository: "https://github.com/ajcandelariaa/reactjs-taythrifts",
       website: "",
       description: "An e-commerce web application for Taytay Thrift Market with store-owner Inventory system.",
-      about: "TayThrifts is an e-commerce web application for Taytay Thrift Market with store-owner Inventory system. I am the Lead Developer in this project and this is made for my final project as a one of the requirements of my subject. ",
-      screenshots: [certDatabase,aj,aj,taythrifts,certDatabase,aj,certDatabase,aj,certDatabase,aj,certDatabase,aj],
+      about: "TayThrifts is an e-commerce web application for Taytay Thrift Market with store-owner Inventory system. It is a group project and I am the Lead Developer in it. This is made for our final project as a one of the requirements of our subject. To develop this system I used ReactJS, Firebase and TailwindCss. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Account Information", 
+        "Add, Edit and Delete Store Items",
+        "Add, Edit and Delete Items to Cart",
+        "Checkout Payment",
+        "Customer and Store Transaction History"
+      ],
+      screenshots: taythriftsImages(),
+    },
+    {
+      id: 2,
+      title: "Desktopop",
+      image: desktopop_main,
+      languages: ["HTML", "CSS", "JavaScript", "MySQL", "Bootstrap"],
+      link: "/projects/desktopop",
+      linkName: "desktopop",
+      repository: "https://github.com/ajcandelariaa/html-desktopop",
+      website: "https://desktopop-e-learning.netlify.app/",
+      description: "An E-Learning Website about Programming, Networking and Hardware with Exercises.",
+      about: "Desktopop is E-Learning Website about Programming, Networking and Hardware with Exercises. It is a group project and I am the Lead Developer in it. This is made for our final project as a one of the requirements of our subject. To develop this system I used HTML, CSS, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Assessment Management",
+        "Live Feedback",
+      ],
+      screenshots: desktopopImages(),
+    },
+    {
+      id: 3,
+      title: "Recipe Ideas",
+      image: recipeIdeas_main,
+      languages: ["Codeigniter", "JavaScript", "MySQL", "Bootstrap"],
+      link: "/projects/recipeIdeas",
+      linkName: "recipeIdeas",
+      repository: "https://github.com/ajcandelariaa/codeigniter-recipe-ideas",
+      website: "",
+      description: "A Blog Website about Food Recipes and Ingredients information that is shared by the users.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: recipeIdeasImages(),
+    },
+    {
+      id: 4,
+      title: "Mai Otome Travel Agency",
+      image: travelAgency_main,
+      languages: ["C++"],
+      link: "/projects/travelAgency",
+      linkName: "travelAgency",
+      repository: "https://github.com/ajcandelariaa/cplusplus-travel-agency",
+      website: "",
+      description: "A travel agency system that is made for japan.",
+      about: "Recipe Ideas is a Blog Website about Food Recipes and Ingredients information that is shared by the users. It is a solo project and I am the Lead Developer in it. This is made for my final project as a one of the requirements of my subject. To develop this system I used Codeigniter, JavaScript, MySQL and Bootstrap. ",
+      features: [
+        "Registration & Login", 
+        "Add, Edit and Delete Food Recipe",
+      ],
+      screenshots: travelAgencyImages(),
     },
   ];
   return data;

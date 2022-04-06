@@ -17,6 +17,9 @@
 }
 .links_flex {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .links_flex a {
   color: white;
@@ -59,7 +62,7 @@
   margin-top: 40px;
 }
 .project_images {
-  margin-top: 50px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -74,4 +77,9 @@
 
 .project_images img:hover {
   transform-style: scale(1.2);
+}
+.project_features{
+  padding-left: 20px;
+  font-size: 14px;
+  margin-top: 10px;
 }

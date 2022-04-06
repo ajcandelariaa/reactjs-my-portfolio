@@ -16,8 +16,8 @@ function Project() {
   const { projectName } = useParams();
   const navigate = useNavigate();
   const fade = {
-    hidden: { opacity: 0, y: 1100},
-    visible: { opacity: 1, y: 0},
+    hidden: { opacity: 0, y: 1100 },
+    visible: { opacity: 1, y: 0 },
   };
 
   useEffect(() => {
@@ -28,6 +28,7 @@ function Project() {
     if (data.length === 0) {
       navigate(`/projects-${projectName}`, { replace: true });
     }
+
     setTitle(`Project | ${data[0].title}`);
     setProject(...data);
   }, []);
@@ -47,21 +48,49 @@ function Project() {
       >
         <div className={style.project_introduction}>
           <div>
-            <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .1 }} className={style.project_title}>{project.title}</motion.p>
-            <motion.p variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .2 }} className={style.project_desc}>{project.description}</motion.p>
-            <motion.div variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .3 }}  className={style.links_flex}>
+            <motion.p
+              variants={fade}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className={style.project_title}
+            >
+              {project.title}
+            </motion.p>
+            <motion.p
+              variants={fade}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className={style.project_desc}
+            >
+              {project.description}
+            </motion.p>
+            <motion.div
+              variants={fade}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className={style.links_flex}
+            >
               {project.website === "" ? (
                 ""
               ) : (
                 <a href={project.website} target="_blank" rel="noreferrer">
-                  Live Demo
+                  <i class="fa-solid fa-globe"></i>
                 </a>
               )}
               <a href={project.repository} target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
             </motion.div>
-            <motion.div variants={fade} initial='hidden' animate='visible' transition={{ duration: .7, delay: .4 }} className={style.project_scroll_down}>
+            <motion.div
+              variants={fade}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className={style.project_scroll_down}
+            >
               <Link
                 to="bottom"
                 spy={true}
@@ -84,6 +113,13 @@ function Project() {
             </p>
           </div>
           <p className={style.project_about}>{project.about}</p>
+          <ul className={style.project_features}>
+            {project.features && (
+              <>
+                {project.features.map((feature, index) => <li key={index}>{feature}</li>)}
+              </>
+            )}
+          </ul>
           <div className={style.project_images}>
             {project.screenshots && (
               <>

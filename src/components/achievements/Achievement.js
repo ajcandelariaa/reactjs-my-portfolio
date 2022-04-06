@@ -20,6 +20,15 @@ function Achievement({ achievement }) {
       controls.start("visible");
     }
   }, [controls, inView]);
+
+  
+  useEffect(() => {
+    if(imageModal){
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [imageModal])
   return (
     <motion.div
       ref={ref}
