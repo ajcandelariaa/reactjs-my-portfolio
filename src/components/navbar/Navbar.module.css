@@ -3,6 +3,7 @@
   width: 100%;
   padding: 30px 0px;
   transition: background .5s, padding .5s;
+  z-index: 30;
 }
 .container_active {
   position: fixed;

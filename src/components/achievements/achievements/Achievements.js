@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import style from "./Achievements.module.css";
-import { getAchievements } from "../../helpers/Data";
-import Achievement from "./Achievement";
+import { getAchievements } from "../../../helpers/Data";
+import Achievement from "../achievement/Achievement";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import style from "./Project.module.css";
 import { getProjects } from "../../helpers/Data";
-import { useNavigate, useParams } from "react-router-dom";
 import Link from "react-scroll/modules/components/Link";
-
 import scrolldown from "../../images/projects/scrolldown.gif";
-import ProjectImage from "../../components/projects/ProjectImage";
-
-import { motion } from "framer-motion";
+import ProjectImage from "../../components/projects/projectImage/ProjectImage";
 
 function Project() {
   const [project, setProject] = useState([]);
   const [title, setTitle] = useState("Project");
   const { projectName } = useParams();
   const navigate = useNavigate();
+
   const fade = {
     hidden: { opacity: 0, y: 1100 },
     visible: { opacity: 1, y: 0 },
@@ -37,6 +37,7 @@ function Project() {
       <Helmet>
         <title>{title}</title>
       </Helmet>
+
       <div
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(${project.image})`,
@@ -116,7 +117,9 @@ function Project() {
           <ul className={style.project_features}>
             {project.features && (
               <>
-                {project.features.map((feature, index) => <li key={index}>{feature}</li>)}
+                {project.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
               </>
             )}
           </ul>

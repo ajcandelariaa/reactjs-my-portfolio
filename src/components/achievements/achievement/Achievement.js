@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Achievement.module.css";
 import { AnimatePresence } from "framer-motion";
-import ImageModal from "../../helpers/imageModal/ImageModal";
+import ImageModal from "../../../helpers/imageModal/ImageModal";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

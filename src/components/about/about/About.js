@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import AboutButtons from "./about-components/about-buttons/AboutButtons";
-import AboutEducation from "./about-components/about-education/AboutEducation";
-import AboutHobbies from "./about-components/about-hobbies/AboutHobbies";
-import AboutInfo from "./about-components/about-info/AboutInfo";
-import AboutSkills from "./about-components/about-skills/AboutSkills";
+import AboutButtons from "../about-components/about-buttons/AboutButtons";
+import AboutEducation from "../about-components/about-education/AboutEducation";
+import AboutHobbies from "../about-components/about-hobbies/AboutHobbies";
+import AboutInfo from "../about-components/about-info/AboutInfo";
+import AboutSkills from "../about-components/about-skills/AboutSkills";
 import style from "./About.module.css";
 import { useAnimation, motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
