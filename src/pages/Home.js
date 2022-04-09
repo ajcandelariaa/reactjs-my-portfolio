@@ -22,7 +22,7 @@ function Home() {
   };
 
   const changeNavbar = () => {
-    if(window.innerWidth <= 600){
+    if(window.innerWidth <= 900){
       setMobileSize(true)
     } else {
       setMobileSize(false)
