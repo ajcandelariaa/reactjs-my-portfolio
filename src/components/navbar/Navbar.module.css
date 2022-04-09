@@ -90,9 +90,6 @@
   transform-origin: 0 0;
   transition: 0.4s;
 }
-.mob_nav_hamburger:hover span:nth-child(2){
-  transform: translateX(10px);
-}
 .mob_nav_hamburger.is_active span:nth-child(1){
   transform: translate(0px, 2px) rotate(45deg);
 }

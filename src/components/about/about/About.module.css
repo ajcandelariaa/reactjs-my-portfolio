@@ -7,12 +7,7 @@
     padding: 70px 0px;
     color: white;
 }
-.heading{
-    font-size: 2rem;
-    text-align: center;
-}
 .infos_container{
-    margin-top: 50px;
     height: 500px;
     display: grid;
     grid-template-columns: 200px 1px auto;
@@ -26,4 +21,18 @@
 }
 .info{
     align-self: center;
+}
+
+
+@media only screen and (max-width: 1400px){
+    .infos_container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    .border{
+        display: none;
+    }
 }

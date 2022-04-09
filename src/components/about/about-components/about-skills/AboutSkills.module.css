@@ -2,16 +2,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #fff;
-    justify-content: space-around;
     font-size: 20px;
     row-gap: 50px;
+    width: 100%;
 }
 .logos{
     margin-left: 20px;
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 .logo{
     height: 50px;
+}
+
+@media only screen and (max-width: 900px){
+    .info{
+        grid-template-columns: 1fr;
+    }
 }

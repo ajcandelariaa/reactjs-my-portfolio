@@ -22,12 +22,11 @@ function Home() {
   };
 
   const changeNavbar = () => {
-    if(window.innerWidth <= 965){
+    if(window.innerWidth <= 600){
       setMobileSize(true)
     } else {
       setMobileSize(false)
     }
-    console.log(window.innerWidth);
   }
 
   useEffect(() => {
@@ -44,8 +43,8 @@ function Home() {
       </Helmet>
 
       <Navbar navbar={navbar} mobileSize={mobileSize} />
-      {/* <Introduction />
-      <About /> */}
+      <Introduction />
+      <About />
       <Projects />
       <Achievements />
       <Contact />

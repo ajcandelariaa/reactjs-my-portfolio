@@ -37,15 +37,6 @@ function About() {
   return (
     <div className={`${style.container} about`}>
       <div className={style.wrapper}>
-        <motion.p
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={animate}
-          className={style.heading}
-        >
-          {active}
-        </motion.p>
         <div className={style.infos_container}>
           <motion.div
             ref={ref}
