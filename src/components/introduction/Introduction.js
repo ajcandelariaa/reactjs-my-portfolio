@@ -20,7 +20,7 @@ function Introduction() {
       </motion.div>
       <motion.div variants={fadeRight} initial='hidden' animate='visible' transition={{ duration: 1, delay: 1  }} className={style.info}>
         <p>Hello, I am</p>
-        <h1>Aj</h1>
+        <h1>AJ</h1>
         <h1>Candelaria</h1>
         <p>A Junior Full-Stack Web and Mobile Developer</p>
 

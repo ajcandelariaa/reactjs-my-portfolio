@@ -11,6 +11,7 @@ import Contact from "../components/contact/Contact";
 
 function Home() {
   const [navbar, setNavbar] = useState(false);
+  const [mobileSize, setMobileSize] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -20,9 +21,20 @@ function Home() {
     }
   };
 
+  const changeNavbar = () => {
+    if(window.innerWidth <= 600){
+      setMobileSize(true)
+    } else {
+      setMobileSize(false)
+    }
+    console.log(window.innerWidth);
+  }
+
   useEffect(() => {
     changeBackground();
+    changeNavbar();
     window.addEventListener("scroll", changeBackground);
+    window.addEventListener("resize", changeNavbar);
   });
 
   return (
@@ -31,7 +43,7 @@ function Home() {
         <title>Aj Candelaria</title>
       </Helmet>
 
-      <Navbar navbar={navbar} />
+      <Navbar navbar={navbar} mobileSize={mobileSize} />
       <Introduction />
       <About />
       <Projects />
