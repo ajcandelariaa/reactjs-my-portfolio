@@ -44,8 +44,8 @@ function Home() {
       </Helmet>
 
       <Navbar navbar={navbar} mobileSize={mobileSize} />
-      {/* <Introduction /> */}
-      <About />
+      {/* <Introduction />
+      <About /> */}
       <Projects />
       <Achievements />
       <Contact />
