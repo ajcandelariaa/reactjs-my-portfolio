@@ -2,10 +2,10 @@
     background: #000;
 }
 .wrapper{
-    width: 80%;
-    margin: 0px auto;
-    color: white;
+    width: min(90%, 93.75rem);
+    margin-inline: auto;
     padding: 70px 0px;
+    color: white;
 }
 .heading{
     font-size: 2rem;

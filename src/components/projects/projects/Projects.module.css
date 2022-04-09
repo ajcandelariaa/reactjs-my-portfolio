@@ -1,8 +1,8 @@
 .container {
-  width: 80%;
-  margin: 0px auto;
-  color: black;
+  width: min(90%, 93.75rem);
+  margin-inline: auto;
   padding: 70px 0px;
+  color: black;
 }
 .heading {
   font-size: 2rem;
@@ -14,4 +14,25 @@
   gap: 20px;
   margin-top: 50px;
   align-items: flex-start;
+}
+
+
+@media only screen and (max-width: 1300px){
+  .projects_grid{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .projects_grid{
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .projects_grid{
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+  }
 }

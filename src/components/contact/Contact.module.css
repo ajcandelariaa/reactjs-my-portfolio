@@ -1,8 +1,8 @@
 .container {
-  width: 80%;
-  margin: 0px auto;
-  color: black;
+  width: min(90%, 93.75rem);
+  margin-inline: auto;
   padding: 70px 0px;
+  color: black;
 }
 .heading {
   font-size: 2rem;
@@ -11,8 +11,8 @@
 .form_inputs{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
+    width: min(95%, 53.75rem);
+    margin-inline: auto;
     row-gap: 10px;
     margin-top: 30px;
 }

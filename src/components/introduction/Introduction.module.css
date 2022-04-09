@@ -1,21 +1,17 @@
 .container {
-  width: 80%;
-  margin: 0px auto;
-  padding-top: 60px;
+  width: min(90%, 93.75rem);
+  margin-inline: auto;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 20px;
-}
-.image_container{
-  text-align: center;
+  padding-top: 20px;
 }
 .my_image {
   width: 90%;
 }
 .info {
-  padding-left: 50px;
+  padding-left: 1.2rem;
 }
 .info p {
   font-size: 1.2rem;
