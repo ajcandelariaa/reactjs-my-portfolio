@@ -17,7 +17,8 @@
   margin-top: 10px;
   font-size: 16px;
   color: #9f9f9f;
-  width: 500px;
+  width: min(90%, 31.25rem);
+  margin-inline: auto;
 }
 .links_flex {
   margin-top: 20px;
