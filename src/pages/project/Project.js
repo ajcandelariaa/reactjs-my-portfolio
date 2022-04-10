@@ -47,61 +47,63 @@ function Project() {
           height: "100vh",
         }}
       >
-        <div className={style.project_introduction}>
-          <div>
-            <motion.p
-              variants={fade}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className={style.project_title}
-            >
-              {project.title}
-            </motion.p>
-            <motion.p
-              variants={fade}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className={style.project_desc}
-            >
-              {project.description}
-            </motion.p>
-            <motion.div
-              variants={fade}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className={style.links_flex}
-            >
-              {project.website === "" ? (
-                ""
-              ) : (
-                <a href={project.website} target="_blank" rel="noreferrer">
-                  <i class="fa-solid fa-globe"></i>
-                </a>
-              )}
-              <a href={project.repository} target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-github"></i>
-              </a>
-            </motion.div>
-            <motion.div
-              variants={fade}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.7, delay: 0.4 }}
-              className={style.project_scroll_down}
-            >
-              <Link
-                to="bottom"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={700}
+        <div className={style.project_container}>
+          <div className={style.project_introduction}>
+            <div>
+              <motion.p
+                variants={fade}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.7, delay: 0.1 }}
+                className={style.project_title}
               >
-                <img src={scrolldown} alt="scrolldown" />
-              </Link>
-            </motion.div>
+                {project.title}
+              </motion.p>
+              <motion.p
+                variants={fade}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.7, delay: 0.2 }}
+                className={style.project_desc}
+              >
+                {project.description}
+              </motion.p>
+              <motion.div
+                variants={fade}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className={style.links_flex}
+              >
+                {project.website === "" ? (
+                  ""
+                ) : (
+                  <a href={project.website} target="_blank" rel="noreferrer">
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                )}
+                <a href={project.repository} target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </motion.div>
+              <motion.div
+                variants={fade}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.7, delay: 0.4 }}
+                className={style.project_scroll_down}
+              >
+                <Link
+                  to="bottom"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={700}
+                >
+                  <img src={scrolldown} alt="scrolldown" />
+                </Link>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

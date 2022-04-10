@@ -7,6 +7,9 @@
   text-align: center;
   cursor: pointer;
   background: black;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
 }
 .hovereffect .overlay {
   width: 100%;
@@ -60,20 +63,20 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.project_name{
+.project_name {
   text-align: center;
-  color: #A6A6A6;
+  color: #a6a6a6;
   font-size: 20px;
 }
-.project_languages{
+.project_languages {
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
 }
-.project_languages p{
+.project_languages p {
   font-size: 12px;
-  background-color: #2B2B2B;
-  color: #A6A6A6;
+  background-color: #2b2b2b;
+  color: #a6a6a6;
   padding: 3px 10px;
   border-radius: 50px;
 }

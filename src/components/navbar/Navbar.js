@@ -12,13 +12,13 @@ function Navbar({ navbar, mobileSize }) {
   };
 
   const fadeL = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
   };
 
   const fadeR = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
   };
 
   const hamburgerClicked = () => {
@@ -44,7 +44,7 @@ function Navbar({ navbar, mobileSize }) {
                   transition={{ duration: 1, delay: 0.1 }}
                   className={style.mob_nav_logo}
                 >
-                  <img src={logo} />
+                  <img src={logo} alt={logo}/>
                 </motion.div>
                 <div
                   className={`${style.mob_nav_link} ${

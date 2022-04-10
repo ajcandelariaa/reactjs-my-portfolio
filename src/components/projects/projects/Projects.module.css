@@ -1,7 +1,7 @@
 .container {
   width: min(90%, 93.75rem);
   margin-inline: auto;
-  padding: 70px 0px;
+  padding: 50px 0px;
   color: black;
 }
 .heading {

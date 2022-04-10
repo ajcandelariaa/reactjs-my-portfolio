@@ -2,10 +2,11 @@
     background-color: black;
     color: #959595;
     text-align: center;
-    padding: 70px 0px;
+    padding: 50px 0px;
 }
 .social_media_icons{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
     justify-content: center;
 }
@@ -20,7 +21,7 @@
     margin-top: 20px;
 }
 .links a{
-    font-size: 14px;
+    font-size: 0.8rem;
     cursor: pointer;
 }
 .links a:hover{
@@ -28,5 +29,5 @@
 }
 .info p{
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 0.7rem;
 }

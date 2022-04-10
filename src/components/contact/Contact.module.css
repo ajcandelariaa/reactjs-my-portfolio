@@ -1,7 +1,7 @@
 .container {
   width: min(90%, 93.75rem);
   margin-inline: auto;
-  padding: 70px 0px;
+  padding: 50px 0px;
   color: black;
 }
 .heading {
@@ -14,7 +14,7 @@
     width: min(95%, 53.75rem);
     margin-inline: auto;
     row-gap: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .input{
     background-color: #dbdbdb;

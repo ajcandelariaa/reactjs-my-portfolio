@@ -65,7 +65,7 @@ function Contact() {
 
     emailjs.sendForm('service_dhbbmif', 'template_v6zpu9h', form.current, 'FMt_aKPxYCGQvy8GB')
       .then((result) => {
-          console.log(result.text);
+        alert("Message sent!");
       }, (error) => {
           console.log(error.text);
       });
@@ -88,6 +88,7 @@ function Contact() {
         <form ref={form} onSubmit={handleForm}>
           <div className={style.form_inputs}>
             <motion.input
+              required
               ref={ref2}
               animate={controls2}
               initial="hidden"
@@ -99,6 +100,7 @@ function Contact() {
               name="name"
             />
             <motion.input
+              required
               ref={ref3}
               animate={controls3}
               initial="hidden"
@@ -110,6 +112,7 @@ function Contact() {
               name="email"
             />
             <motion.input
+              required
               ref={ref4}
               animate={controls4}
               initial="hidden"
@@ -121,6 +124,7 @@ function Contact() {
               name="subject"
             />
             <motion.textarea
+              required
               ref={ref5}
               animate={controls5}
               initial="hidden"
