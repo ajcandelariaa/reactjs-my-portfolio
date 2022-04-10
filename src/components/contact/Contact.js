@@ -103,7 +103,7 @@ function Contact() {
               animate={controls3}
               initial="hidden"
               variants={animate}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               type="text"
               className={style.input}
               placeholder="Email Address"
@@ -114,7 +114,7 @@ function Contact() {
               animate={controls4}
               initial="hidden"
               variants={animate}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               type="text"
               className={style.input}
               placeholder="Subject"
@@ -125,7 +125,7 @@ function Contact() {
               animate={controls5}
               initial="hidden"
               variants={animate}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className={style.input}
               placeholder="Your Message"
               rows="8"
@@ -137,7 +137,7 @@ function Contact() {
             animate={controls6}
             initial="hidden"
             variants={animate}
-            transition={{ duration: 0.5, delay: 0.7 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className={style.form_button}
           >
             <button>Submit</button>

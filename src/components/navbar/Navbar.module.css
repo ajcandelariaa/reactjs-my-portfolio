@@ -56,8 +56,10 @@
   right: 0;
   z-index: 30;
   padding: 16px 32px;
+  transition: background .5s;
+}
+.mob_nav.active{
   background-color: black;
-
 }
 .mob_nav_container{
   display: flex;
@@ -84,11 +86,15 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background-color: white;
+  background-color: black;
   border-radius: 6px;
   z-index: 1;
   transform-origin: 0 0;
   transition: 0.4s;
+}
+
+.mob_nav_hamburger span.active{
+  background-color: white;
 }
 .mob_nav_hamburger.is_active span:nth-child(1){
   transform: translate(0px, 2px) rotate(45deg);
@@ -107,9 +113,13 @@
   text-align: center;
   width: 100%;
   height: 100vh;
+  background-color: white;  
+  color: black;
+  transition: all .5s;
+}
+.mob_nav_link.active{
   background-color: black;
   color: white;
-  transition: all .5s;
 }
 .mob_nav_link.is_active{
   left: 0;
