@@ -35,11 +35,13 @@ import certJavascript from "../images/achievements/certJavascript.PNG";
 import certDatabase from "../images/achievements/certDatabase.PNG";
 import certCcna from "../images/achievements/certCcna.PNG";
 import certDevnet from "../images/achievements/certDevnet.PNG";
+import certCyberops from "../images/achievements/certCyberops.PNG";
 
 import badgeJavascript from "../images/achievements/badgeJavascript.png";
 import badgeDatabase from "../images/achievements/badgeDatabase.png";
 import badgeCcna from "../images/achievements/badgeCcna.png";
 import badgeDevnet from "../images/achievements/badgeDevnet.png";
+import badgeCyberops from "../images/achievements/badgeCyberops.png";
 
 
 export function getProjects() {
@@ -295,6 +297,16 @@ export function getAchievements(){
       issuedDate: "August 23, 2021",
       certificate: certDevnet,
       credly: "https://www.credly.com/badges/6d9169b4-2755-41c0-a503-94b7b8086469",
+      delay: .2,
+    },
+    {
+      id: 5,
+      badge: badgeCyberops,
+      title: "CyberOps Associate",
+      issuedBy: "Cisco",
+      issuedDate: "April 11, 2022",
+      certificate: certCyberops,
+      credly: "https://www.credly.com/badges/f204db52-4c8f-465a-8dde-a63cda771aee",
       delay: .2,
     },
   ]
