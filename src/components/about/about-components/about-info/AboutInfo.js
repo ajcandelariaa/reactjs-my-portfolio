@@ -13,7 +13,7 @@ function AboutInfo() {
     <div className={style.info}>
       <motion.p variants={fadeRight} initial='hidden' animate='visible' transition={{ duration: .5 }}>
         I am Albert Joseph M. Candelaria who currently lives in Al Rigga, Dubai,
-        UAE. I’m 21 years old who are currently studying Bachelor of Science in
+        UAE. I’m 21 years old who is currently studying Bachelor of Science in
         Information Technology with Specialization of Web and Mobile Application
         at FEU Institute of Technology. I’m a junior developer who can develop
         your website using React JS, Laravel and Codeigniter framework. I can
