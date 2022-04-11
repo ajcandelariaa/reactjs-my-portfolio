@@ -275,7 +275,7 @@ export function getAchievements(){
       issuedDate: "November 18, 2019",
       certificate: certDatabase,
       credly: "https://www.credly.com/badges/5ad3cd7b-dfce-46d1-9ecc-92f5d1a89bae",
-      delay: .3,
+      delay: .2,
     },
     {
       id: 3,
@@ -285,7 +285,7 @@ export function getAchievements(){
       issuedDate: "December 06, 2021",
       certificate: certCcna,
       credly: "https://www.credly.com/badges/ad2729b3-9a9a-4809-950c-fd70f17db17e",
-      delay: .4,
+      delay: .2,
     },
     {
       id: 4,
@@ -295,7 +295,7 @@ export function getAchievements(){
       issuedDate: "August 23, 2021",
       certificate: certDevnet,
       credly: "https://www.credly.com/badges/6d9169b4-2755-41c0-a503-94b7b8086469",
-      delay: .5,
+      delay: .2,
     },
   ]
   return data;

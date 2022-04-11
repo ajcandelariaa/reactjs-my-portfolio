@@ -1,24 +1,55 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useNavigate, useParams } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 import style from "./Project.module.css";
 import { getProjects } from "../../helpers/Data";
 import Link from "react-scroll/modules/components/Link";
 import scrolldown from "../../images/projects/scrolldown.gif";
 import ProjectImage from "../../components/projects/projectImage/ProjectImage";
+import { useInView } from "react-intersection-observer";
 
 function Project() {
   const [project, setProject] = useState([]);
   const [title, setTitle] = useState("Project");
   const { projectName } = useParams();
   const navigate = useNavigate();
+  const [ref, inView] = useInView();
+  const [ref2, inView2] = useInView();
+  const [ref3, inView3] = useInView();
+  const controls = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
 
   const fade = {
     hidden: { opacity: 0, y: 1100 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const animate = {
+    visible: { opacity: 1},
+    hidden: { opacity: 0},
+  };
+  
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  useEffect(() => {
+    if (inView2) {
+      controls2.start("visible");
+    }
+  }, [controls2, inView2]);
+
+  useEffect(() => {
+    if (inView3) {
+      controls3.start("visible");
+    }
+  }, [controls3, inView3]);
 
   useEffect(() => {
     const data = getProjects().filter(
@@ -110,13 +141,28 @@ function Project() {
       <div className={`${style.project_grid} bottom`}>
         <div className={style.sidebar}></div>
         <div className={style.project_info}>
-          <div className={style.project_title}>
+          <motion.div 
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={animate}
+              transition={{ duration: 0.5, delay: 0.2 }} className={style.project_title}>
             <p className="text-xl uppercase border border-sideBarMarketplaceButtonsActive w-fit py-2 px-10">
               {project.title}
             </p>
-          </div>
-          <p className={style.project_about}>{project.about}</p>
-          <ul className={style.project_features}>
+          </motion.div>
+          <motion.p 
+              ref={ref2}
+              animate={controls2}
+              initial="hidden"
+              variants={animate}
+              transition={{ duration: 0.5, delay: 0.3 }} className={style.project_about}>{project.about}</motion.p>
+          <motion.ul 
+              ref={ref3}
+              animate={controls3}
+              initial="hidden"
+              variants={animate}
+              transition={{ duration: 0.5, delay: 0.3 }} className={style.project_features}>
             {project.features && (
               <>
                 {project.features.map((feature, index) => (
@@ -124,7 +170,7 @@ function Project() {
                 ))}
               </>
             )}
-          </ul>
+          </motion.ul>
           <div className={style.project_images}>
             {project.screenshots && (
               <>

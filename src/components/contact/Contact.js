@@ -80,7 +80,7 @@ function Contact() {
           animate={controls}
           initial="hidden"
           variants={animate}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           className={style.heading}
         >
           Contact Me
@@ -93,7 +93,7 @@ function Contact() {
               animate={controls2}
               initial="hidden"
               variants={animate}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               type="text"
               className={style.input}
               placeholder="Name"
@@ -105,7 +105,7 @@ function Contact() {
               animate={controls3}
               initial="hidden"
               variants={animate}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               type="text"
               className={style.input}
               placeholder="Email Address"
@@ -117,7 +117,7 @@ function Contact() {
               animate={controls4}
               initial="hidden"
               variants={animate}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               type="text"
               className={style.input}
               placeholder="Subject"
@@ -129,7 +129,7 @@ function Contact() {
               animate={controls5}
               initial="hidden"
               variants={animate}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className={style.input}
               placeholder="Your Message"
               rows="8"
@@ -141,7 +141,7 @@ function Contact() {
             animate={controls6}
             initial="hidden"
             variants={animate}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className={style.form_button}
           >
             <button>Submit</button>
