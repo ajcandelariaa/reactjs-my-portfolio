@@ -36,12 +36,14 @@ import certDatabase from "../images/achievements/certDatabase.PNG";
 import certCcna from "../images/achievements/certCcna.PNG";
 import certDevnet from "../images/achievements/certDevnet.PNG";
 import certCyberops from "../images/achievements/certCyberops.PNG";
+import certCcna2 from "../images/achievements/certCcna2.PNG";
 
 import badgeJavascript from "../images/achievements/badgeJavascript.png";
 import badgeDatabase from "../images/achievements/badgeDatabase.png";
 import badgeCcna from "../images/achievements/badgeCcna.png";
 import badgeDevnet from "../images/achievements/badgeDevnet.png";
 import badgeCyberops from "../images/achievements/badgeCyberops.png";
+import badgeCcna2 from "../images/achievements/badgeCcna2.png";
 
 
 export function getProjects() {
@@ -307,6 +309,16 @@ export function getAchievements(){
       issuedDate: "April 11, 2022",
       certificate: certCyberops,
       credly: "https://www.credly.com/badges/f204db52-4c8f-465a-8dde-a63cda771aee",
+      delay: .2,
+    },
+    {
+      id: 6,
+      badge: badgeCcna2,
+      title: "CCNA: Enterprise Networking, Security, and Automation",
+      issuedBy: "Cisco",
+      issuedDate: "April 26, 2022",
+      certificate: certCcna2,
+      credly: "https://www.credly.com/badges/cc0de8a8-3bb5-4f2e-bcdd-c38cf7384ad8",
       delay: .2,
     },
   ]
