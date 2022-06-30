@@ -71,6 +71,26 @@ export function getProjects() {
     },
     {
       id: 2,
+      title: "TechnoFest",
+      image: taythrifts_main,
+      languages: ["HTML", "CSS", "Bootstrap"],
+      link: "/projects/technofest",
+      linkName: "technofest",
+      repository: "https://github.com/ajcandelariaa/html-technofest",
+      website: "https://technofest-at.netlify.app/",
+      description: "A static website that shows the informations about TechnoFest.",
+      about: "TechnoFest is a static website where it shows the events, trivias, competitions, and other information that talks about them. It is a group project and I am the Lead Developer in it. This is made and used to participate in Web Jam Competition. To develop this system we used HTML, CSS, JavaScript and Bootstrap. ",
+      features: [
+        "About TecnoFest",
+        "Announcements", 
+        "Events", 
+        "Trivias",
+        "Contact",
+      ],
+      screenshots: taythriftsImages(),
+    },
+    {
+      id: 3,
       title: "Desktopop",
       image: desktopop_main,
       languages: ["HTML", "CSS", "JavaScript", "MySQL", "Bootstrap"],
@@ -88,7 +108,7 @@ export function getProjects() {
       screenshots: desktopopImages(),
     },
     {
-      id: 3,
+      id: 4,
       title: "Recipe Ideas",
       image: recipeIdeas_main,
       languages: ["Codeigniter", "JavaScript", "MySQL", "Bootstrap"],
@@ -105,7 +125,7 @@ export function getProjects() {
       screenshots: recipeIdeasImages(),
     },
     {
-      id: 4,
+      id: 5,
       title: "Food Recipes",
       image: foodRecipes_main,
       languages: ["Android", "Kotlin", "SQLite"],
@@ -122,7 +142,7 @@ export function getProjects() {
       screenshots: foodRecipesImages(),
     },
     {
-      id: 5,
+      id: 6,
       title: "Quickchen",
       image: quickchen_main,
       languages: ["IOS", "Swift"],
@@ -142,7 +162,7 @@ export function getProjects() {
       screenshots: quickchenImages(),
     },
     {
-      id: 6,
+      id: 7,
       title: "Human Anatomy",
       image: humanAnatomy_main,
       languages: ["Xcode", "Swift"],
@@ -159,7 +179,7 @@ export function getProjects() {
       screenshots: humanAnatomyImages(),
     },
     {
-      id: 7,
+      id: 8,
       title: "Mai Otome Travel Agency",
       image: travelAgency_main,
       languages: ["C++"],
@@ -181,7 +201,7 @@ export function getProjects() {
       screenshots: travelAgencyImages(),
     },
     {
-      id: 8,
+      id: 9,
       title: "Payroll System",
       image: payrollSystem_main,
       languages: ["C++"],
@@ -201,7 +221,7 @@ export function getProjects() {
       screenshots: payrollSystemImages(),
     },
     {
-      id: 9,
+      id: 10,
       title: "Grading System",
       image: gradingSystem_main,
       languages: ["C++"],
@@ -219,7 +239,7 @@ export function getProjects() {
       screenshots: gradingSystemImages(),
     },
     {
-      id: 10,
+      id: 11,
       title: "Banking System",
       image: bankingSystem_main,
       languages: ["C++"],
@@ -238,7 +258,7 @@ export function getProjects() {
       screenshots: bankingSystemImages(),
     },
     {
-      id: 11,
+      id: 12,
       title: "LRT 2 Ticketing System",
       image: lrt2TicketingSystem_main,
       languages: ["C++"],
