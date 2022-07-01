@@ -31,6 +31,9 @@ import quickchenImages from "../helpers/projectImages/Quickchen";
 import humanAnatomy_main from "../images/projects/humanAnatomy/0.PNG";
 import humanAnatomyImages from "../helpers/projectImages/HumanAnatomy";
 
+import technofest_main from "../images/projects/technofest/0.PNG";
+import technofestImages from "../helpers/projectImages/TechnoFest";
+
 import certJavascript from "../images/achievements/certJavascript.PNG";
 import certDatabase from "../images/achievements/certDatabase.PNG";
 import certCcna from "../images/achievements/certCcna.PNG";
@@ -72,8 +75,8 @@ export function getProjects() {
     {
       id: 2,
       title: "TechnoFest",
-      image: taythrifts_main,
-      languages: ["HTML", "CSS", "Bootstrap"],
+      image: technofest_main,
+      languages: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       link: "/projects/technofest",
       linkName: "technofest",
       repository: "https://github.com/ajcandelariaa/html-technofest",
@@ -87,7 +90,7 @@ export function getProjects() {
         "Trivias",
         "Contact",
       ],
-      screenshots: taythriftsImages(),
+      screenshots: technofestImages(),
     },
     {
       id: 3,
