@@ -46,3 +46,26 @@
     padding: 0 0;
   }
 }
+
+
+@media only screen and (max-width: 425px){
+  .container {
+    width: min(90%, 93.75rem);
+    margin-inline: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .my_image{
+    display: none;
+  }
+  .info h1 {
+    font-size: 1.5rem;
+  }
+  .info a {
+    padding: 0 0;
+  }
+}
