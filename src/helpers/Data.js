@@ -34,6 +34,7 @@ import humanAnatomyImages from "../helpers/projectImages/HumanAnatomy";
 import technofest_main from "../images/projects/technofest/0.PNG";
 import technofestImages from "../helpers/projectImages/TechnoFest";
 
+import certFlutter from "../images/achievements/certFlutter.jpg";
 import certJavascript from "../images/achievements/certJavascript.PNG";
 import certDatabase from "../images/achievements/certDatabase.PNG";
 import certCcna from "../images/achievements/certCcna.PNG";
@@ -41,6 +42,7 @@ import certDevnet from "../images/achievements/certDevnet.PNG";
 import certCyberops from "../images/achievements/certCyberops.PNG";
 import certCcna2 from "../images/achievements/certCcna2.PNG";
 
+import badgeFlutter from "../images/achievements/badgeFlutter.jpg";
 import badgeJavascript from "../images/achievements/badgeJavascript.png";
 import badgeDatabase from "../images/achievements/badgeDatabase.png";
 import badgeCcna from "../images/achievements/badgeCcna.png";
@@ -286,6 +288,16 @@ export function getAchievements(){
   const data = [
     {
       id: 1,
+      badge: badgeFlutter,
+      title: "Flutter & Dart - The Complete Guide",
+      issuedBy: "Udemy",
+      issuedDate: "October 20, 2022",
+      certificate: certFlutter,
+      credly: "https://www.udemy.com/certificate/UC-66e272f7-0c20-4085-815f-9698df3e6614/",
+      delay: .2,
+    },
+    {
+      id: 2,
       badge: badgeJavascript,
       title: "JavaScript",
       issuedBy: "Certiport",
@@ -295,7 +307,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 2,
+      id: 3,
       badge: badgeDatabase,
       title: "Database Fundamentals",
       issuedBy: "Microsoft",
@@ -305,7 +317,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 3,
+      id: 4,
       badge: badgeCcna,
       title: "CCNA: Switching, Routing, and Wireless Essentials",
       issuedBy: "Cisco",
@@ -315,7 +327,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 4,
+      id: 5,
       badge: badgeDevnet,
       title: "DevNet Associate",
       issuedBy: "Cisco",
@@ -325,7 +337,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 5,
+      id: 6,
       badge: badgeCyberops,
       title: "CyberOps Associate",
       issuedBy: "Cisco",
@@ -335,7 +347,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 6,
+      id: 7,
       badge: badgeCcna2,
       title: "CCNA: Enterprise Networking, Security, and Automation",
       issuedBy: "Cisco",

@@ -49,7 +49,7 @@ function Achievement({ achievement }) {
           <div className={style.achievement_buttons}>
             <button onClick={() => setImageModal(true)}>Certificate</button>
             <a href={achievement.credly} target="_blank" rel="noreferrer">
-              Credly
+              Read more
             </a>
           </div>
         </div>
