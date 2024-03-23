@@ -15,12 +15,15 @@ function AboutEducation() {
       <div className={style.school_grid}>
         <motion.div variants={fade} initial='hidden' animate='visible' transition={{ duration: .5, delay: .4 }}>
           <div className={style.level}>
-            <p>College (2018 – Present)</p>
+            <p>College (2018 – 2023)</p>
           </div>
           <div className={style.level__info}>
             <p>FEU Institute of Technology</p>
             <p>
               839 P. Paredes, Sampaloc, Manila, 1015 Metro Manila, Philippines
+            </p>
+            <p>
+              Cum Laude (GPA: 3.42/4.0)
             </p>
           </div>
         </motion.div>

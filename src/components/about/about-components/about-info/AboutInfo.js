@@ -12,13 +12,7 @@ function AboutInfo() {
   return (
     <div className={style.info}>
       <motion.p variants={fadeRight} initial='hidden' animate='visible' transition={{ duration: .5 }}>
-        I am Albert Joseph M. Candelaria who currently lives in Al Rigga, Dubai,
-        UAE. I’m 21 years old who is currently studying Bachelor of Science in
-        Information Technology with Specialization of Web and Mobile Application
-        at FEU Institute of Technology. I’m a junior developer who can develop
-        your website using React JS, Laravel and Codeigniter framework. I can
-        also convert your website into native android mobile application by the
-        use of Kotlin programming language.
+      Meet AJ Candelaria, a 23-year-old developer passionate about crafting websites, mobile apps, and dabbling in desktop app development. With a knack for building sleek and functional digital solutions, I thrive on creating user-friendly experiences that leave a lasting impression. Whether it's optimizing websites for seamless navigation, designing intuitive mobile apps, or exploring the world of desktop applications, I'm always eager to tackle new challenges. Let's work together to turn your ideas into reality!
       </motion.p>
       <motion.img variants={fadeRight} initial='hidden' animate='visible' transition={{ duration: .5, delay: .2 }} src={aj} alt="aj" />
     </div>
