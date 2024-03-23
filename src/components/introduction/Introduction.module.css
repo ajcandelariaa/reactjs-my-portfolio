@@ -53,3 +53,25 @@
     display: none;
   }
 }
+
+
+@media only screen and (max-width: 600px){
+  .info h1 {
+    font-size: 4rem;
+    padding: 5px 0px;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .info h1 {
+    font-size: 3rem;
+    padding: 5px 0px;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+}

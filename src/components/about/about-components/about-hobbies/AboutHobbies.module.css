@@ -1,6 +1,5 @@
 .hobbies__grid{
     display: grid;
-    width: 80%;
 }
 .hobbies__grid p{
     color: #fff;

@@ -1,0 +1,35 @@
+.container{
+    background: #000;
+}
+.wrapper{
+    width: min(90%, 93.75rem);
+    margin-inline: auto;
+    padding: 70px 0px;
+    color: white;
+}
+.border{
+    background-color: aliceblue;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1400px){
+    .infos_container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    .border{
+        display: none;
+    }
+}
