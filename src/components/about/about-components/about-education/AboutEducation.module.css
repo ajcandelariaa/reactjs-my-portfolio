@@ -34,3 +34,13 @@
     padding: 0px;
     color: rgb(172, 172, 172);
 }
+
+@media only screen and (max-width: 950px){
+    .info{
+        display: flex;
+    }
+    
+    .info img{
+        display: none;
+    }
+}

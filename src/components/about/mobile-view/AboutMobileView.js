@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AboutEducation from "../about-components/about-education/AboutEducation";
 import AboutHobbies from "../about-components/about-hobbies/AboutHobbies";
 import AboutInfo from "../about-components/about-info/AboutInfo";
@@ -8,23 +8,11 @@ import { useAnimation, motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function About() {
-  const [active, setActive] = useState("About");
   const { ref, inView } = useInView();
   const controls = useAnimation();
-
-  const animate = {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: .2 } },
-    hidden: { opacity: 0, y: 50 },
-  };
-
   const animate2 = {
     visible: { opacity: 1, x: 0, transition: { duration: 1, delay: .2 } },
     hidden: { opacity: 0, x: 100 },
-  };
-
-  const animate3 = {
-    visible: { opacity: 1, x: 0, transition: { duration: 1, delay: .2 } },
-    hidden: { opacity: 0, x: -100 },
   };
 
   useEffect(() => {
