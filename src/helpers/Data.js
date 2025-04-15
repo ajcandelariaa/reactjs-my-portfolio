@@ -41,6 +41,11 @@ import certCcna from "../images/achievements/certCcna.PNG";
 import certDevnet from "../images/achievements/certDevnet.PNG";
 import certCyberops from "../images/achievements/certCyberops.PNG";
 import certCcna2 from "../images/achievements/certCcna2.PNG";
+import certAWSCPF from "../images/achievements/certAWSCPF.jpg";
+import certAWSSAA from "../images/achievements/certAWSSAA.jpg";
+import certUdemyAWSCPF from "../images/achievements/certUdemyAWSCPF.jpg";
+import certUdemyAWSSAA from "../images/achievements/certUdemyAWSSAA.jpg";
+import certUdemyAWSAIP from "../images/achievements/certUdemyAWSAIP.jpg";
 
 import badgeFlutter from "../images/achievements/badgeFlutter.jpg";
 import badgeJavascript from "../images/achievements/badgeJavascript.png";
@@ -49,6 +54,11 @@ import badgeCcna from "../images/achievements/badgeCcna.png";
 import badgeDevnet from "../images/achievements/badgeDevnet.png";
 import badgeCyberops from "../images/achievements/badgeCyberops.png";
 import badgeCcna2 from "../images/achievements/badgeCcna2.png";
+import badgeAWSCPF from "../images/achievements/badgeAWSCPF.png";
+import badgeAWSSAA from "../images/achievements/badgeAWSSAA.png";
+import badgeUdemyAWSCPF from "../images/achievements/badgeUdemyAWSCPF.jpg";
+import badgeUdemyAWSSAA from "../images/achievements/badgeUdemyAWSSAA.jpg";
+import badgeUdemyAWSAIP from "../images/achievements/badgeUdemyAWSAIP.jpg";
 
 
 export function getProjects() {
@@ -283,31 +293,36 @@ export function getProjects() {
   return data;
 }
 
-
-export function getAchievements(){
+export function getAWSCertificates(){
   const data = [
     {
       id: 1,
-      badge: badgeFlutter,
-      title: "Flutter & Dart - The Complete Guide",
-      issuedBy: "Udemy",
-      issuedDate: "October 20, 2022",
-      certificate: certFlutter,
-      credly: "https://www.udemy.com/certificate/UC-66e272f7-0c20-4085-815f-9698df3e6614/",
-      delay: .2,
+      badge: badgeAWSCPF,
+      title: "AWS Certified Cloud Practitioner",
+      issuedBy: "Amazon Web Services Training and Certification",
+      issuedDate: "October 19, 2024",
+      certificate: certAWSCPF,
+      credly: "https://www.credly.com/badges/115e0bff-19bc-421c-a777-ac0a6a3f283d",
+      delay: .1,
     },
     {
       id: 2,
-      badge: badgeJavascript,
-      title: "JavaScript",
-      issuedBy: "Certiport",
-      issuedDate: "March 19, 2022",
-      certificate: certJavascript,
-      credly: "https://www.credly.com/badges/3c2bb824-6241-4a8e-bace-08a00cc0826b",
+      badge: badgeAWSSAA,
+      title: "AWS Certified Solutions Architect – Associate",
+      issuedBy: "Amazon Web Services Training and Certification",
+      issuedDate: "November 25, 2024",
+      certificate: certAWSSAA,
+      credly: "https://www.credly.com/badges/52e4213c-2236-4701-81e7-202b02656a2b",
       delay: .2,
     },
+  ]
+  return data;
+}
+
+export function getMicrosoftCertificates(){
+  const data = [
     {
-      id: 3,
+      id: 1,
       badge: badgeDatabase,
       title: "Database Fundamentals",
       issuedBy: "Microsoft",
@@ -316,8 +331,76 @@ export function getAchievements(){
       credly: "https://www.credly.com/badges/5ad3cd7b-dfce-46d1-9ecc-92f5d1a89bae",
       delay: .2,
     },
+  ]
+  return data;
+}
+
+export function getCertiportCertificates(){
+  const data = [
+    {
+      id: 1,
+      badge: badgeJavascript,
+      title: "JavaScript",
+      issuedBy: "Certiport",
+      issuedDate: "March 19, 2022",
+      certificate: certJavascript,
+      credly: "https://www.credly.com/badges/3c2bb824-6241-4a8e-bace-08a00cc0826b",
+      delay: .2,
+    },
+  ]
+  return data;
+}
+
+export function getUdemyCertificates(){
+  const data = [
+    {
+      id: 1,
+      badge: badgeUdemyAWSCPF,
+      title: "Ultimate AWS Certified Cloud Practitioner CLF-C02",
+      issuedBy: "Udemy",
+      issuedDate: "September 28, 2024",
+      certificate: certUdemyAWSCPF,
+      credly: "https://www.udemy.com/certificate/UC-710fad23-7ffc-4283-881f-8cfa8527b065/",
+      delay: .2,
+    },
+    {
+      id: 2,
+      badge: badgeUdemyAWSSAA,
+      title: "Ultimate AWS Certified Solutions Architect Associate",
+      issuedBy: "Udemy",
+      issuedDate: "November 2, 2024",
+      certificate: certUdemyAWSSAA,
+      credly: "https://www.udemy.com/certificate/UC-c2116ad8-f83c-40c1-9b8f-02e6f5adc8b6/",
+      delay: .2,
+    },
+    {
+      id: 3,
+      badge: badgeUdemyAWSAIP,
+      title: "Ultimate AWS Certified AI Practitioner AIF-C01",
+      issuedBy: "Udemy",
+      issuedDate: "December 9, 2024",
+      certificate: certUdemyAWSAIP,
+      credly: "https://www.udemy.com/certificate/UC-5597cd86-2dd3-40d6-9a29-9b4e974f5271/",
+      delay: .2,
+    },
     {
       id: 4,
+      badge: badgeFlutter,
+      title: "Flutter & Dart - The Complete Guide",
+      issuedBy: "Udemy",
+      issuedDate: "October 20, 2022",
+      certificate: certFlutter,
+      credly: "https://www.udemy.com/certificate/UC-66e272f7-0c20-4085-815f-9698df3e6614/",
+      delay: .2,
+    },
+  ]
+  return data;
+}
+
+export function getCiscoCertificates(){
+  const data = [
+    {
+      id: 1,
       badge: badgeCcna,
       title: "CCNA: Switching, Routing, and Wireless Essentials",
       issuedBy: "Cisco",
@@ -327,7 +410,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 5,
+      id: 2,
       badge: badgeDevnet,
       title: "DevNet Associate",
       issuedBy: "Cisco",
@@ -337,7 +420,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 6,
+      id: 3,
       badge: badgeCyberops,
       title: "CyberOps Associate",
       issuedBy: "Cisco",
@@ -347,7 +430,7 @@ export function getAchievements(){
       delay: .2,
     },
     {
-      id: 7,
+      id: 4,
       badge: badgeCcna2,
       title: "CCNA: Enterprise Networking, Security, and Automation",
       issuedBy: "Cisco",

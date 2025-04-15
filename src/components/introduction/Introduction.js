@@ -22,7 +22,7 @@ function Introduction() {
         <p>Hello, I am</p>
         <h1>AJ</h1>
         <h1>Candelaria</h1>
-        <p>Full-Stack Web and Mobile Developer | IT Coordinator</p>
+        <p>Full-Stack Web and Mobile Developer | IT Specialist</p>
 
         <a href={resume} target="_blank" rel="noreferrer">Download my Resume</a>
       </motion.div>
